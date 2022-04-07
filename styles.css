@@ -7,3 +7,22 @@ grey - #95a5a6;
 red - #ee5253
 
 */
+
+body {
+  background-image: url('/assets/burger-friends.jpg');
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0fb9b1;
+}
+
+.cooking {
+  background-color: rgba(225, 225, 225, .9) ;
+  font-family: 'Roboto', sans-serif;
+}
+
+svg {
+  background-color: rgba(225, 225, 225, .9);
+  transform: scale(.15);
+}
