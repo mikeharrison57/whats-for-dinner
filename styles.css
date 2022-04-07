@@ -14,15 +14,22 @@ body {
 
 h2 {
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   background-color: #0fb9b1;
+  padding: 20px;
+  border: solid;
+  border-size: 10px;
 }
 
 .cooking {
   background-color: rgba(225, 225, 225, .9) ;
   font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-direction: column;
+  height: 275px;
 }
 
 .lets-cook {
@@ -34,9 +41,9 @@ h2 {
 .cooking-pot {
   background-color: rgba(225, 225, 225, .9);
   display: flex;
-  justify-content: flex-end;
 }
 
 svg {
+  justify-content: flex-end;
 
 }
