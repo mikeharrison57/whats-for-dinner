@@ -20,9 +20,23 @@ h2 {
 .cooking {
   background-color: rgba(225, 225, 225, .9) ;
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.lets-cook {
+  background-color: #0fb9b1;
+  width: 150px;
+  height: 40px;
+}
+
+.cooking-pot {
+  background-color: rgba(225, 225, 225, .9);
+  display: flex;
+  justify-content: flex-end;
 }
 
 svg {
-  background-color: rgba(225, 225, 225, .9);
-  transform: scale(.15);
+
 }
