@@ -5,11 +5,17 @@ teal - #0fb9b1;
 frosted white - rgba(225, 225, 225, .9);
 grey - #95a5a6;
 red - #ee5253
-
 */
 
-body {
-  background-image: url('/assets/burger-friends.jpg');
+html {
+  background: url('assets/burger-friends.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-page {
+  display: flex;
+  justify-content: space-around;
 }
 
 h2 {
@@ -17,8 +23,11 @@ h2 {
   font-weight: bold;
   background-color: #0fb9b1;
   padding: 20px;
-  border: solid;
-  border-size: 10px;
+  width: 1370px;
+  height: 30px;
+  top: 500px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .cooking {
@@ -27,23 +36,52 @@ h2 {
   font-size: 20px;
   font-weight: bold;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
-  height: 275px;
+  height: 300px;
+  padding: 50px;
+  width: 400px;
+  margin: 20px;
 }
 
 .lets-cook {
   background-color: #0fb9b1;
-  width: 150px;
+  width: 200px;
   height: 40px;
+  border-radius: 4px;
+  border-color: blue;
+}
+.clear {
+  color: white;
+  background-color: #95a5a6;
+  width: 80px;
+  height: 70px;
+  border-radius: 5px;
+  border-color: rgba(225, 225, 225, .9);
 }
 
 .cooking-pot {
   background-color: rgba(225, 225, 225, .9);
+  font-family: 'Roboto', sans-serif;
   display: flex;
+  justify-content: center center;
+  font-style: italic;
+  flex-direction: column;
+  height: 300px;
+  padding: 50px;
+  width: 400px;
+  margin: 20px;
 }
 
-svg {
-  justify-content: flex-end;
-
-}
+/* .you-should-make hidden {
+  background-color: rgba(225, 225, 225, .9);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  font-style: italic;
+  flex-direction: column;
+  height: 300px;
+  padding: 50px;
+  width: 400px;
+  margin: 20px;
+} */
