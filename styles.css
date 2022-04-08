@@ -13,14 +13,8 @@ html {
   background-position: center;
 }
 
-.main-page {
-  display: flex;
-  justify-content: space-around;
-}
-
 h2 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+
   background-color: #0fb9b1;
   padding: 20px;
   width: 1370px;
@@ -30,11 +24,15 @@ h2 {
   margin-left: auto;
 }
 
+.main-page {
+  display: flex;
+  justify-content: space-around;
+}
+
 .cooking {
   background-color: rgba(225, 225, 225, .9) ;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  font-weight: bold;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -73,7 +71,8 @@ h2 {
   margin: 20px;
 }
 
-/* .you-should-make hidden {
+.you-should-make {
+  display: none!important;
   background-color: rgba(225, 225, 225, .9);
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -84,4 +83,4 @@ h2 {
   padding: 50px;
   width: 400px;
   margin: 20px;
-} */
+}
