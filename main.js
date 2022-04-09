@@ -5,7 +5,8 @@ var main = document.querySelector('.main');
 var dessert = document.querySelector('.dessert');
 var hiddenShouldMake = document.querySelector('.you-should-make');
 var cookingPotSection = document.querySelector('.cooking-pot');
-var stockFood = document.querySelector('.stock-food')
+var stockFood = document.querySelector('.stock-food');
+var 
 
 // Global Arrays
 var sides = [

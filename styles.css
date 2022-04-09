@@ -13,6 +13,34 @@ html {
   background-position: center;
 }
 
+.login-page {
+  background-color: rgba(225, 225, 225, .9);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* align-content: stretch; */
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  height: 500px;
+  padding: 50px;
+  width: auto;
+  margin: 20px;
+  font-size: 12px;
+}
+
+.login-button:hover {
+  background: orange;
+}
+
+.login-button {
+  background-color: #0fb9b1;
+  width: 100px;
+  height: 25px;
+  border-radius: 100px;
+  border-color: blue;
+}
+
 header {
   background-color: #0fb9b1;
   padding: 30px;
