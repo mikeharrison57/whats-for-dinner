@@ -1,4 +1,8 @@
 // Query Selector Variables
+var loginPage = document.querySelector('.login-page');
+var nameBox = document.querySelector('.name-box');
+var signInButton = document.querySelector('.login-button');
+var mainPage = document.querySelector('.main-page');
 var letsCookButton = document.querySelector('.lets-cook');
 var side = document.querySelector('.side');
 var main = document.querySelector('.main');
@@ -6,7 +10,7 @@ var dessert = document.querySelector('.dessert');
 var hiddenShouldMake = document.querySelector('.you-should-make');
 var cookingPotSection = document.querySelector('.cooking-pot');
 var stockFood = document.querySelector('.stock-food');
-var 
+
 
 // Global Arrays
 var sides = [
@@ -65,6 +69,7 @@ var desserts = [
 
 // Event Listeners
 letsCookButton.addEventListener('click', youShouldMake);
+signInButton.addEventListener('click', login);
 
 // Functions
 function getRandomDish(array) {
@@ -99,6 +104,11 @@ function changePot() {
   hide(cookingPotSection);
   show(hiddenShouldMake)
 };
+
+function login() {
+  hide(loginPage);
+  show(mainPage);
+}
 
 // Event Handlers
 function youShouldMake() {
