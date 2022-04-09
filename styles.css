@@ -13,12 +13,14 @@ html {
   background-position: center;
 }
 
-h2 {
+header {
   background-color: #0fb9b1;
   padding: 20px;
   width: 1370px;
   height: 30px;
   top: 500px;
+  display: flex;
+  justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
 }
@@ -34,7 +36,7 @@ h2 {
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 350px;
   padding: 50px;
   width: 400px;
   margin: 20px;
@@ -50,6 +52,10 @@ sup {
   border-radius: 4px;
   border-color: blue;
 }
+.lets-cook:hover {
+  background: orange;
+}
+
 .clear {
   color: white;
   background-color: #95a5a6;
@@ -60,29 +66,35 @@ sup {
 }
 
 .cooking-pot {
-  /* display: none!important; */
+  display: block;
   background-color: rgba(225, 225, 225, .9);
-  font-family: 'Roboto', sans-serif;
   display: flex;
-  justify-content: center center;
-  font-style: italic;
-  flex-direction: column;
-  height: 300px;
+  justify-content: center;
+  height: 350px;
   padding: 50px;
   width: 400px;
   margin: 20px;
 }
 
+img {
+  height: 200px;
+  width: 200px;
+  margin-top: 75px;
+}
+
 .you-should-make {
-  display: none!important;
   background-color: rgba(225, 225, 225, .9);
   font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: space-around;
   font-style: italic;
   flex-direction: column;
-  height: 300px;
+  height: 350px;
   padding: 50px;
   width: 400px;
   margin: 20px;
+}
+
+.hidden {
+  display: none!important
 }

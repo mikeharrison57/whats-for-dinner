@@ -1,8 +1,10 @@
 // Query Selector Variables
 var letsCookButton = document.querySelector('.lets-cook');
 var foodButtons = document.querySelectorAll('.food');
-var youShouldMake = document.querySelector('.you-should-make hidden');
-var cookingPot = document.querySelector('.cooking')
+var hiddenShouldMake = document.querySelector('.you-should-make');
+var cookingPotSection = document.querySelector('.cooking-pot');
+var pot = document.querySelector('svg');
+
 
 // Global Arrays
 var sides = [
@@ -60,17 +62,23 @@ var desserts = [
 ];
 
 // Event Listeners
-letsCookButton.addEventListener('click', )
+letsCookButton.addEventListener('click', changePot);
 
 // Functions and Event Handlers
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
+};
 
 function randomFood() {
   var randomSide = sides[getRandomIndex(sides)];
   var randomMain = mains[getRandomINdex(mains)];
   var randomDessert = desserts[getRandomIndex(desserts)]
 };
+
+// function changePot() {
+//   cookingPotSection.classList.add('hidden');
+//   hiddenShouldMake.classList.add('block')
+// }
 
 function show(element) {
   element.classList.remove('hidden')
@@ -81,8 +89,9 @@ function hide(element) {
 };
 
 function changePot() {
-
-}
+  hide(cookingPotSection);
+  show(hiddenShouldMake)
+};
 
 // need random sides, mains, and desserts to display from button
 // need let's cook button to display these results in pot box
