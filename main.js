@@ -1,15 +1,16 @@
 // Query Selector Variables
 var letsCookButton = document.querySelector('.lets-cook');
-var foodButtons = document.querySelectorAll('.food');
+var side = document.querySelector('.side');
+var main = document.querySelector('.main');
+var dessert = document.querySelector('.dessert');
 var hiddenShouldMake = document.querySelector('.you-should-make');
 var cookingPotSection = document.querySelector('.cooking-pot');
 var pot = document.querySelector('svg');
 
-
 // Global Arrays
 var sides = [
   'Fresh Green Beans',
-  'Sautéed Zucchini and Squash',
+  'Sauteed Zucchini and Squash',
   'Fruit Salad',
   'Roasted Veggies',
   'Garden Salad',
@@ -62,23 +63,31 @@ var desserts = [
 ];
 
 // Event Listeners
-letsCookButton.addEventListener('click', changePot);
+letsCookButton.addEventListener('click', youShouldMake);
 
 // Functions and Event Handlers
-function getRandomIndex(array) {
+function getRandomDish(array) {
   return Math.floor(Math.random() * array.length);
 };
 
 function randomFood() {
-  var randomSide = sides[getRandomIndex(sides)];
-  var randomMain = mains[getRandomINdex(mains)];
-  var randomDessert = desserts[getRandomIndex(desserts)]
+  var randomSide = sides[getRandomDish(sides)];
+  var randomMain = mains[getRandomDish(mains)];
+  var randomDessert = desserts[getRandomDish(desserts)];
+  side.value = randomSide;
+  main.value = randomMain;
+  dessert.value = randomDessert
+  if (side.checked) {
+    return hiddenShouldMake.innerHTML +=
+    `<h1>${side.value}<h1>`
+  } else if (main.checked) {
+    return hiddenShouldMake.innerHTML +=
+    `<h1>${main.value}<h1>`
+  } else if (dessert.checked) {
+    return hiddenShouldMake.innerHTML +=
+    `<h1>${dessert.value}<h1>`
+  }
 };
-
-// function changePot() {
-//   cookingPotSection.classList.add('hidden');
-//   hiddenShouldMake.classList.add('block')
-// }
 
 function show(element) {
   element.classList.remove('hidden')
@@ -92,6 +101,15 @@ function changePot() {
   hide(cookingPotSection);
   show(hiddenShouldMake)
 };
+
+function youShouldMake() {
+  changePot();
+  randomFood();
+  // hiddenShouldMake.innerHTML +=
+  // `<h1>${dessert.value}<h1>`
+}
+
+
 
 // need random sides, mains, and desserts to display from button
 // need let's cook button to display these results in pot box

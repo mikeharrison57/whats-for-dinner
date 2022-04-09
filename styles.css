@@ -95,6 +95,10 @@ img {
   margin: 20px;
 }
 
+.stock-food {
+  font.size: 20px;
+}
+
 .hidden {
   display: none!important
 }
