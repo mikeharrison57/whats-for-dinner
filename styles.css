@@ -14,7 +14,6 @@ html {
 }
 
 h2 {
-
   background-color: #0fb9b1;
   padding: 20px;
   width: 1370px;
@@ -34,12 +33,14 @@ h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   height: 300px;
   padding: 50px;
   width: 400px;
   margin: 20px;
+}
+sup {
+  color: #ee5253;
 }
 
 .lets-cook {
@@ -59,6 +60,7 @@ h2 {
 }
 
 .cooking-pot {
+  /* display: none!important; */
   background-color: rgba(225, 225, 225, .9);
   font-family: 'Roboto', sans-serif;
   display: flex;
