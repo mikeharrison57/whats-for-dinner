@@ -1,6 +1,8 @@
 // Query Selector Variables
+var header = document.querySelector('.top')
+
 var loginPage = document.querySelector('.login-page');
-var nameBox = document.querySelector('.name-box');
+var nameInput = document.querySelector('.name-box');
 var signInButton = document.querySelector('.login-button');
 var mainPage = document.querySelector('.main-page');
 var letsCookButton = document.querySelector('.lets-cook');
@@ -10,6 +12,8 @@ var dessert = document.querySelector('.dessert');
 var hiddenShouldMake = document.querySelector('.you-should-make');
 var cookingPotSection = document.querySelector('.cooking-pot');
 var stockFood = document.querySelector('.stock-food');
+
+var bottom = document.querySelector('.welcome-message')
 
 
 // Global Arrays
@@ -105,13 +109,19 @@ function changePot() {
   show(hiddenShouldMake)
 };
 
-function login() {
-  hide(loginPage);
-  show(mainPage);
+function welcomeMessage() {
+
 }
 
 // Event Handlers
 function youShouldMake() {
   changePot();
   randomFood();
+}
+
+function login() {
+  hide(loginPage);
+  show(header);
+  show(mainPage);
+  show(bottom);
 }

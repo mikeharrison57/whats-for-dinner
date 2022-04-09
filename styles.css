@@ -18,7 +18,6 @@ html {
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
-  /* align-content: stretch; */
   justify-content: center;
   align-items: center;
   font-style: italic;
@@ -120,6 +119,15 @@ img {
   width: 400px;
   margin: 20px;
   font-size: 25px;
+}
+
+.welcome-message {
+  background-color: #CD212A;
+  padding: 30px;
+  width: 95%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .hidden {
