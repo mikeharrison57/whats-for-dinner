@@ -5,7 +5,7 @@ var main = document.querySelector('.main');
 var dessert = document.querySelector('.dessert');
 var hiddenShouldMake = document.querySelector('.you-should-make');
 var cookingPotSection = document.querySelector('.cooking-pot');
-var pot = document.querySelector('svg');
+var stockFood = document.querySelector('.stock-food')
 
 // Global Arrays
 var sides = [
@@ -65,7 +65,7 @@ var desserts = [
 // Event Listeners
 letsCookButton.addEventListener('click', youShouldMake);
 
-// Functions and Event Handlers
+// Functions
 function getRandomDish(array) {
   return Math.floor(Math.random() * array.length);
 };
@@ -78,14 +78,11 @@ function randomFood() {
   main.value = randomMain;
   dessert.value = randomDessert
   if (side.checked) {
-    return hiddenShouldMake.innerHTML +=
-    `<h1>${side.value}<h1>`
+    return stockFood.innerText = side.value;
   } else if (main.checked) {
-    return hiddenShouldMake.innerHTML +=
-    `<h1>${main.value}<h1>`
+    return stockFood.innerText = main.value;
   } else if (dessert.checked) {
-    return hiddenShouldMake.innerHTML +=
-    `<h1>${dessert.value}<h1>`
+    return stockFood.innerHTML = dessert.value;
   }
 };
 
@@ -102,15 +99,8 @@ function changePot() {
   show(hiddenShouldMake)
 };
 
+// Event Handlers
 function youShouldMake() {
   changePot();
   randomFood();
-  // hiddenShouldMake.innerHTML +=
-  // `<h1>${dessert.value}<h1>`
 }
-
-
-
-// need random sides, mains, and desserts to display from button
-// need let's cook button to display these results in pot box
-// pot needs to disapper and the other html needs to appear

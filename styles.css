@@ -15,14 +15,12 @@ html {
 
 header {
   background-color: #0fb9b1;
-  padding: 20px;
-  width: 1370px;
-  height: 30px;
+  padding: 30px;
+  width: 95%;
+  height: 20px;
   top: 500px;
   display: flex;
   justify-content: space-between;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .main-page {
@@ -93,10 +91,7 @@ img {
   padding: 50px;
   width: 400px;
   margin: 20px;
-}
-
-.stock-food {
-  font.size: 20px;
+  font-size: 25px;
 }
 
 .hidden {
