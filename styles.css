@@ -13,35 +13,36 @@ html {
   background-position: center;
 }
 
-.main-page {
-  display: flex;
-  justify-content: space-around;
-}
-
-h2 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+header {
   background-color: #0fb9b1;
   padding: 20px;
   width: 1370px;
   height: 30px;
   top: 500px;
+  display: flex;
+  justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
+}
+
+.main-page {
+  display: flex;
+  justify-content: space-around;
 }
 
 .cooking {
   background-color: rgba(225, 225, 225, .9) ;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  font-weight: bold;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  height: 300px;
+  height: 350px;
   padding: 50px;
   width: 400px;
   margin: 20px;
+}
+sup {
+  color: #ee5253;
 }
 
 .lets-cook {
@@ -51,6 +52,10 @@ h2 {
   border-radius: 4px;
   border-color: blue;
 }
+.lets-cook:hover {
+  background: orange;
+}
+
 .clear {
   color: white;
   background-color: #95a5a6;
@@ -61,27 +66,35 @@ h2 {
 }
 
 .cooking-pot {
+  display: block;
   background-color: rgba(225, 225, 225, .9);
-  font-family: 'Roboto', sans-serif;
   display: flex;
-  justify-content: center center;
-  font-style: italic;
-  flex-direction: column;
-  height: 300px;
+  justify-content: center;
+  height: 350px;
   padding: 50px;
   width: 400px;
   margin: 20px;
 }
 
-/* .you-should-make hidden {
+img {
+  height: 200px;
+  width: 200px;
+  margin-top: 75px;
+}
+
+.you-should-make {
   background-color: rgba(225, 225, 225, .9);
   font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: space-around;
   font-style: italic;
   flex-direction: column;
-  height: 300px;
+  height: 350px;
   padding: 50px;
   width: 400px;
   margin: 20px;
-} */
+}
+
+.hidden {
+  display: none!important
+}
