@@ -13,14 +13,15 @@
     <section class ="main-page">
       <section class="cooking">
         <h1> What are you looking for? <sup> * </sup> </h1>
-        <input type="radio" class="dish" name="food" value="Side">
+        <input type="radio" class="side" name="food" value="Side">
         <label for="side">Side</label> <br>
-        <input type="radio" class="dish" name="food" value="Main Dish">
+        <input type="radio" class="main" name="food" value="Main Dish">
         <label for="main">Main</label> <br>
-        <input type="radio" class="dish" name="food" value="Dessert">
+        <input type="radio" class="dessert" name="food" value="Dessert">
         <label for="dessert">Dessert</label> <br>
-        <input type="radio" class="meal" name="meal" value="Entire Meal">
-        <label for="main">Main</label> <br>
+        <!-- <input type="radio" class="meal hidden" name="meal" value="Entire Meal"
+        <label for="main">Entire Meal</label>  -->
+        <br>
         <button type="button" class ="lets-cook" name="cook" value="LET'S COOK!">
         <lable for="lets-cook">LET'S COOK!</label>
       </section>
@@ -29,6 +30,9 @@
       </section>
       <section class="you-should-make hidden"
         <h3> You should make:</h3>
+        <div class="stock-food">
+          <h1> Stock Food </h1>
+        </div>
         <input type="button" class ="clear" name="cook" value="Clear" />
       </section>
     </section>
