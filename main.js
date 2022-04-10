@@ -1,5 +1,5 @@
 // Query Selector Variables
-var header = document.querySelector('.top')
+var header = document.querySelector('.top');
 var loginPage = document.querySelector('.login-page');
 var nameInput = document.querySelector('.name-box');
 var signInButton = document.querySelector('.login-button');
@@ -11,7 +11,9 @@ var dessert = document.querySelector('.dessert');
 var hiddenShouldMake = document.querySelector('.you-should-make');
 var cookingPotSection = document.querySelector('.cooking-pot');
 var stockFood = document.querySelector('.stock-food');
-var bottom = document.querySelector('.welcome-message')
+var bottom = document.querySelector('.welcome-message');
+var mealButton = document.querySelector('.meal').disabled = true;
+var clearButton = document.querySelector('.clear');
 
 // Global Arrays
 var sides = [
@@ -71,6 +73,7 @@ var desserts = [
 // Event Listeners
 letsCookButton.addEventListener('click', youShouldMake);
 signInButton.addEventListener('click', login);
+clearButton.addEventListener('click',  clear);
 
 // Functions
 function getRandomDish(array) {
@@ -101,27 +104,28 @@ function hide(element) {
   element.classList.add('hidden')
 };
 
-function changePot() {
-  hide(cookingPotSection);
-  show(hiddenShouldMake)
-};
-
 function welcomeMessage() {
   var welcome = nameInput.value;
   bottom.innerHTML =
-  `<h1>Welcome ${welcome}! What's for dinner?</h1>`
+  `<h2>Welcome ${welcome}! What's for dinner?</h2>`
 };
 
 // Event Handlers
 function youShouldMake() {
-  changePot();
-  randomFood();
-}
+  hide(cookingPotSection);
+  show(hiddenShouldMake)
+  randomFood()
+};
 
 function login() {
+  welcomeMessage();
   hide(loginPage);
   show(header);
   show(mainPage);
   show(bottom);
-  welcomeMessage();
-}
+};
+
+function clear() {
+  show(cookingPotSection);
+  hide(hiddenShouldMake)
+};

@@ -1,21 +1,15 @@
-/* font-family: 'Roboto', sans-serif;
-
-COLORS
-teal - #0fb9b1;
-frosted white - rgba(225, 225, 225, .9);
-grey - #95a5a6;
-red - #ee5253
-*/
-
 html {
   background: url('assets/burger-friends.jpg') no-repeat center center fixed;
   background-size: cover;
   background-position: center;
 }
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
 
 .login-page {
   background-color: rgba(225, 225, 225, .9);
-  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +39,6 @@ html {
   padding: 30px;
   width: 95%;
   height: 20px;
-  top: 500px;
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -57,8 +50,7 @@ html {
 }
 
 .cooking {
-  background-color: rgba(225, 225, 225, .9) ;
-  font-family: 'Roboto', sans-serif;
+  background-color: rgba(225, 225, 225, .9);
   font-size: 20px;
   display: flex;
   flex-direction: column;
@@ -67,6 +59,7 @@ html {
   width: 400px;
   margin: 20px;
 }
+
 sup {
   color: #ee5253;
 }
@@ -86,8 +79,8 @@ sup {
 .clear {
   color: white;
   background-color: #95a5a6;
-  width: 80px;
-  height: 70px;
+  width: 65px;
+  height: 35px;
   border-radius: 5px;
   border-color: rgba(225, 225, 225, .9);
 }
@@ -111,19 +104,24 @@ img {
 
 .you-should-make {
   background-color: rgba(225, 225, 225, .9);
-  font-family: 'Roboto', sans-serif;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
   font-style: italic;
   flex-direction: column;
   height: 350px;
   padding: 50px;
   width: 400px;
   margin: 20px;
-  font-size: 25px;
+  font-size: 40px;
+}
+
+.should-make {
+  font-size: 15px;
 }
 
 .welcome-message {
+  color: rgba(225, 225, 225, .9);
   background-color: #CD212A;
   padding: 30px;
   width: 95%;
