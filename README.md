@@ -18,6 +18,10 @@
 
 <img width="1440" alt="Screen Shot 2022-04-10 at 11 57 59 AM" src="https://user-images.githubusercontent.com/95496577/162632928-f5da02a8-8ac5-46d7-ae95-d01db28e5068.png">
 
+<img width="1435" alt="Screen Shot 2022-04-10 at 5 21 04 PM" src="https://user-images.githubusercontent.com/95496577/162644279-0d046473-67c4-474e-8ecf-e967d4f9a28f.png">
+
+<img width="1426" alt="Screen Shot 2022-04-10 at 5 21 33 PM" src="https://user-images.githubusercontent.com/95496577/162644283-09ae79fb-83f3-4c20-9530-acbe7664eca9.png">
+
 ## Lessons Learned
 
 - This project really put my HTML, CSS, and JavasScript abilities to the test. One of the most challenging aspects was attempting to get all of the HTML elements and CSS rules matching the provided comp as closely as possible. This required the use of proper semantic organization of the HTML, making use of  `<section>` and `<div>` elements, and a lot of proper flex-box manipulation within the CSS rules. I was able to learn a few different ways to go about properly organizing my HTML and CSS, and make sure that certain sections were able to be “hidden”  or visible when I wanted them to be. This was of the utmost importance for all of the JavaScript functionality, as it required the hiding and showing of my entire page when the login screen was displayed, and the, “You should make” section prior to selecting a random dish. I utilized some functions that targeted the class list so that I could remove or add “hidden”  to certain elements when I wanted to.
