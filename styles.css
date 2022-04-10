@@ -13,13 +13,41 @@ html {
   background-position: center;
 }
 
-header {
+.login-page {
+  background-color: rgba(225, 225, 225, .9);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  height: 500px;
+  padding: 50px;
+  width: auto;
+  margin: 20px;
+  font-size: 15px;
+}
+
+.login-button:hover {
+  background: orange;
+}
+
+.login-button {
+  background-color: #0fb9b1;
+  width: 100px;
+  height: 25px;
+  border-radius: 100px;
+  border-color: blue;
+}
+
+.top {
   background-color: #0fb9b1;
   padding: 30px;
   width: 95%;
   height: 20px;
   top: 500px;
   display: flex;
+  align-content: center;
   justify-content: space-between;
 }
 
@@ -45,6 +73,7 @@ sup {
 
 .lets-cook {
   background-color: #0fb9b1;
+  font-size: 20px;
   width: 200px;
   height: 40px;
   border-radius: 4px;
@@ -75,9 +104,9 @@ sup {
 }
 
 img {
-  height: 200px;
-  width: 200px;
-  margin-top: 75px;
+  height: 150px;
+  width: 150px;
+  margin-top: 100px;
 }
 
 .you-should-make {
@@ -92,6 +121,15 @@ img {
   width: 400px;
   margin: 20px;
   font-size: 25px;
+}
+
+.welcome-message {
+  background-color: #CD212A;
+  padding: 30px;
+  width: 95%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
 }
 
 .hidden {
