@@ -109,7 +109,7 @@ function changePot() {
 function welcomeMessage() {
   var welcome = nameInput.value;
   bottom.innerHTML =
-  `<h1>Welcome ${welcome}! What's for dinner?</h1>`
+  `<h2>Welcome ${welcome}! What's for dinner?</h2>`
 };
 
 // Event Handlers
@@ -119,9 +119,9 @@ function youShouldMake() {
 }
 
 function login() {
+  welcomeMessage();
   hide(loginPage);
   show(header);
   show(mainPage);
   show(bottom);
-  welcomeMessage();
 }
