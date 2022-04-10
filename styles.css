@@ -25,7 +25,7 @@ html {
   padding: 50px;
   width: auto;
   margin: 20px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .login-button:hover {
@@ -40,13 +40,14 @@ html {
   border-color: blue;
 }
 
-header {
+.top {
   background-color: #0fb9b1;
   padding: 30px;
   width: 95%;
   height: 20px;
   top: 500px;
   display: flex;
+  align-content: center;
   justify-content: space-between;
 }
 
@@ -72,6 +73,7 @@ sup {
 
 .lets-cook {
   background-color: #0fb9b1;
+  font-size: 20px;
   width: 200px;
   height: 40px;
   border-radius: 4px;
@@ -102,9 +104,9 @@ sup {
 }
 
 img {
-  height: 200px;
-  width: 200px;
-  margin-top: 75px;
+  height: 150px;
+  width: 150px;
+  margin-top: 100px;
 }
 
 .you-should-make {
@@ -125,7 +127,7 @@ img {
   background-color: #CD212A;
   padding: 30px;
   width: 95%;
-  height: 20px;
+  height: 60px;
   display: flex;
   justify-content: center;
 }

@@ -1,6 +1,5 @@
 // Query Selector Variables
 var header = document.querySelector('.top')
-
 var loginPage = document.querySelector('.login-page');
 var nameInput = document.querySelector('.name-box');
 var signInButton = document.querySelector('.login-button');
@@ -12,9 +11,7 @@ var dessert = document.querySelector('.dessert');
 var hiddenShouldMake = document.querySelector('.you-should-make');
 var cookingPotSection = document.querySelector('.cooking-pot');
 var stockFood = document.querySelector('.stock-food');
-
 var bottom = document.querySelector('.welcome-message')
-
 
 // Global Arrays
 var sides = [
@@ -110,8 +107,10 @@ function changePot() {
 };
 
 function welcomeMessage() {
-
-}
+  var welcome = nameInput.value;
+  bottom.innerHTML =
+  `<h1>Welcome ${welcome}! What's for dinner?</h1>`
+};
 
 // Event Handlers
 function youShouldMake() {
@@ -124,4 +123,5 @@ function login() {
   show(header);
   show(mainPage);
   show(bottom);
+  welcomeMessage();
 }
